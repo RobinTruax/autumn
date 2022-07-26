@@ -1,0 +1,14 @@
+% Items and Section
+\setbeamertemplate{items}[circle]
+\setbeamertemplate{sections/subsections in toc}[circle]
+
+% Lines
+% https://tex.stackexchange.com/questions/343517/beamer-full-width-hrule-below-frame-title
+\setbeamertemplate{frametitle}{
+    {\color{autumn-brown}\par\hspace*{-\dimexpr0.5\paperwidth-0.5\textwidth}\rule[0.5\baselineskip]{\paperwidth}{0.4pt}}
+    \usebeamerfont{frametitle}
+    \insertframetitle
+    \vphantom{g}
+}
+
+\mode<all>
